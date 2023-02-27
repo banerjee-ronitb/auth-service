@@ -1,9 +1,9 @@
 server:
   port: 8080
-eureka:
-   client:
-      service-url:
-         default-zone: http://localhost:8761/eureka
+#eureka:
+#   client:
+#      service-url:
+#         default-zone: http://localhost:8761/eureka
 okta:
   oauth2:
     issuer: https://dev-63954939.okta.com/oauth2/default

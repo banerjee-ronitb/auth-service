@@ -15,7 +15,7 @@ spring:
   application:
       name: auth-service
   kafka:
-     bootstrap-servers: kafka-service:9092
+     bootstrap-servers: ${KAFKA_URL}
   cloud:
     stream:
       function:

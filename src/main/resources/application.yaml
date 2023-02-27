@@ -14,6 +14,8 @@ spring:
      location: classpath:/auth-service/src/main/resources/banner.txt
   application:
       name: auth-service
+  kafka:
+     bootstrap-servers: kafka-service:9093
   cloud:
     stream:
       function:

@@ -24,6 +24,8 @@ spring:
         userCreateSupplier-out-0:
           destination: user-event
       kafka:
+        binder:
+           replicationFactor: 1
         bindings:
           userCreateSupplier-out-0:
             producer:

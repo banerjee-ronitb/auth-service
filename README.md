@@ -10,7 +10,7 @@ This is an effort to demonstrate a social networking application that has users,
 
 <h2> Authentication Microservice </h2>
 
-This service showcases integration with <a href="/">OKTA</a> to sign up new users. Existing users can login to generate an access token.
+This service showcases integration with <a href="https://www.okta.com/">OKTA</a> to sign up new users. Existing users can login to generate an access token.
  
 <h3> Getting Started </h3>
 
@@ -23,7 +23,8 @@ Follow the steps below:
 - OKTA developer account
 
 <h4> ⏳ Installation </h4>
-This application uses maven to build. Refer to <a href="/"> Installing Maven </a> install maven.
+
+This application uses maven to build. Refer to <a href="https://maven.apache.org/install.html"> Installing Maven </a> to install maven.
 
 ```bash
 Step 1: mvn clean install

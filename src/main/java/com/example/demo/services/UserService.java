@@ -1,6 +1,7 @@
 package com.example.demo.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,6 +23,12 @@ public class UserService {
 
 	@Autowired
 	Sinks.Many<UserCreatedEvent> userEvSink;
+	
+	@Value("${okta.oauth2.orgUrl}")
+	private String orgUrl;
+	
+	@Value("${okta.oauth2.sswsToken}")
+	private String sswsToken;
 
 	@Transactional
 	public User createUser(UserDto user) throws Exception {
@@ -49,8 +56,8 @@ public class UserService {
 	}
 
 	private ApiClient getClient() {
-		return Clients.builder().setOrgUrl("https://dev-63954939.okta.com")
-				.setClientCredentials(new TokenClientCredentials("00SNIja9jeDl6ZG8veBwfQnoMdxFCLiNZ84biFIgFB")).build();
+		return Clients.builder().setOrgUrl(orgUrl)
+				.setClientCredentials(new TokenClientCredentials(sswsToken)).build();
 	}
 
 	public boolean deleteUser(String userId) {

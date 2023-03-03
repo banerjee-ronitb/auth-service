@@ -6,6 +6,8 @@ server:
 #         default-zone: http://localhost:8761/eureka
 okta:
   oauth2:
+    orgUrl: ${ORG_URL}
+    sswsToken: ${SSWS_TOKEN}
     issuer: ${OKTA_ISSUER}
     client-id: ${CLIENT_ID}
     client-secret: ${CLIENT_SECRET}

@@ -12,7 +12,7 @@ This is an effort to demonstrate a social networking application that has users,
 
 This service showcases integration with <a href="https://www.okta.com/">OKTA</a> and Apache Kafka.
  
-- New users can sign,up. Existing users can login to generate the access token.
+- New users can signup. Existing users can login to generate the access token.
 - On every new user sign up, an User Create event is triggered to Apache Kafka.
 - The event consumed by the <a href="https://github.com/banerjee-ronitb/graph-service"> graph service </a>
 - This implementation is an example of OKTA Authorization Code by Grant flow.

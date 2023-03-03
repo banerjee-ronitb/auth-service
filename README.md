@@ -10,8 +10,15 @@ This is an effort to demonstrate a social networking application that has users,
 
 <h2> Authentication Microservice </h2>
 
-This service showcases integration with <a href="https://www.okta.com/">OKTA</a> to sign up new users. Existing users can login to generate an access token.
+This service showcases integration with <a href="https://www.okta.com/">OKTA</a> and Apache Kafka.
  
+- New users can sign,up. Existing users can login to generate the access token.
+- On every new user sign up, an User Create event is triggered to Apache Kafka.
+- The event consumed by the <a href="https://github.com/banerjee-ronitb/graph-service"> graph service </a>
+- This implementation is an example of OKTA Authorization Code by Grant flow.
+
+- For information on OKTA Account setup, visit <a href="https://developer.okta.com/docs/guides/implement-grant-type/authcode/main/"> OKTA Docs </a>
+
 <h3> Getting Started </h3>
 
 Follow the steps below:
@@ -32,4 +39,7 @@ Step 1: mvn clean install
 ```bash
 Step 2: mvn spring-boot:run
 ```
+<h4> Roadmap </h4>
+
+Add an additional repository to showcase deployment using Kuberenetes.
 

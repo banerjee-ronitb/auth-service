@@ -1,7 +1,7 @@
 
 <h1 align="left"> Social Networking App Demonstration </h1>
 
-<h2> Description </h2>
+<h2> Description/Details </h2>
 This is an effort to demonstrate a social networking application that has users, followers, posts and feeds. This repository is built to handle user authentication and authorization related functionalities.
 
 - For user followers, please refer to <a href="https://github.com/banerjee-ronitb/graph-service"> Graph Service </a>

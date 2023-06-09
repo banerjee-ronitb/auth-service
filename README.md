@@ -42,4 +42,3 @@ Step 2: mvn spring-boot:run
 <h4> Roadmap </h4>
 
 Add an additional repository to showcase deployment using Kuberenetes.
-
